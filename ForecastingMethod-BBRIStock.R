@@ -5,7 +5,7 @@ library(lmtest) #for model diagnostic
 
 ##dataset
 library(readr) 
-bbri <- read_csv("Downloads/BBRI.JK (1).csv") #https://drive.google.com/file/d/1LRdMMTAGbelGlf7INfyu9RJt7bWsUVxY/view?usp=drive_link
+bbri <- read_csv("Downloads/BBRI.JK (1).csv") ##https://drive.google.com/file/d/1LRdMMTAGbelGlf7INfyu9RJt7bWsUVxY/view?usp=drive_link
 
 ##time series variable
 ts <- ts(bbri[,5],start = c(2003,12), frequency = 12)
